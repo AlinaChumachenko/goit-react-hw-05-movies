@@ -22,11 +22,11 @@
 
 .link {
   text-decoration: none;
-  color: rgb(1, 1, 4);
+  color: white;
   position: relative;
 }
 
-.link::before {
+/* .link::before {
   content: '';
   position: absolute;
   width: 100%;
@@ -38,9 +38,8 @@
   transform-origin: right;
   transform: scaleX(0);
   transition: transform 0.3s ease-in-out;
-}
+} */
 
-.link:hover::before {
-  transform-origin: left;
-  transform: scaleX(1);
+.link:hover {
+  color: #ffc700;
 }
