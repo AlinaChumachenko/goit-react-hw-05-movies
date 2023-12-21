@@ -11,12 +11,18 @@ const SharedLayout = () => {
         <nav className={css.nav}>
           <ul className={css.list}>
             <li className={css.item}>
-              <NavLink to="/" className={css.link}>
+              <NavLink
+                to="/"
+                className={link => (link.isActive ? css.active : css.link)}
+              >
                 Home
               </NavLink>
             </li>
             <li className={css.item}>
-              <NavLink to="/movies" className={css.link}>
+              <NavLink
+                to="/movies"
+                className={link => (link.isActive ? css.active : css.link)}
+              >
                 Movies
               </NavLink>
             </li>

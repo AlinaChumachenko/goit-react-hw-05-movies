@@ -25,4 +25,10 @@
 .item:hover,
 .item:focus {
   color: #ffc700;
+  text-decoration: underline;
+}
+
+.active {
+  color: #ffc700;
+  text-decoration: underline;
 }
